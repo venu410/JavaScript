@@ -1,0 +1,32 @@
+<html>
+	<title>Variable|Example</title>
+	<head><h1>Type Of variables<h1></head>
+	<body>
+		<script type="text/javascript">
+		 var myName = "Venu Kumar"; //Global variable
+		 var lastName = "Maddela";
+			function a(){
+				var num=100; //Local variable
+				alert(num);
+				document.writeln("<h1>Hello</h1>"+window.myName);
+				b();
+				n();
+			}
+			function b(){
+				document.writeln(lastName);
+				
+			}
+			function m(){
+				window.value=90;  //Declaring global variable using window object
+			}
+			function n(){
+				document.writeln(window.value); //Ascessing global varibale
+			}
+			
+		</script>
+		<form>
+			<input type = "button" value="Click" onclick="a()"/>
+		</form>
+		
+	</body>
+</html>

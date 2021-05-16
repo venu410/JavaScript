@@ -1,0 +1,28 @@
+<!--Date Example-->
+<html>
+	<body>
+		Current Date And Time:<span id = "txt"></span>
+		Current Time:<span id = "txt1"></span>
+		<script type="text/javascript">
+			var date = new Date();
+			document.getElementById('txt').innerHTML=date;
+			
+			var day = date.getDate();
+			var month = date.getMonth()+1;
+			var year = date.getFullYear();
+			document.write("<br> Date is:"+ day+"/"+month+"/"+year);
+			
+			var h=date.getHours();  
+			var m=date.getMinutes();  
+			var s=date.getSeconds(); 
+			document.getElementById('txt1').innerHTML=h+":"+m+":"+s; 
+			document.write("<br> Time is:"+ h+":"+m+":"+s);		
+
+				
+			
+			
+			
+		
+		</script>
+	</body>
+</html>

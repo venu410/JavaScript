@@ -1,0 +1,39 @@
+<!-- We Can creation JS object in 3ways
+	1) By object literal
+	2) By creating instance of Object directly (using new keyword)
+	3) By using an object constructor (using new keyword)
+-->
+<html>
+	<title>Object|Creation</title>
+	<head>
+		<h1>Object Creation</h1>
+	</head>
+	<body>
+		<script type="text/javascript">
+			emp = {id:101,name:"Venu Kumar",salary:100000}; //By object literal  
+			document.writeln("<br>"+emp.id+" "+emp.name+" "+emp.salary);
+			
+			var e = new Object(); //By creating instance of Object directly (using new keyword)
+			e.id = 102;
+			e.name="Ramya";
+			e.salary=90000;
+			
+			document.writeln("<br>"+e.id+" "+e.name+" "+e.salary)
+			
+			function employee(id,name,salary){
+				this.id=id;
+				this.name=name;
+				this.salary=salary;
+				this.changeSalary=changeSalary;
+				function changeSalary(otherSalary){
+					this.salary=otherSalary;
+				}
+			}
+			emp = new employee(103,"Madhu",23000); //By using an object constructor (using new keyword)
+			document.writeln("<br>"+emp.id+" "+emp.name+" "+emp.salary);
+			emp.changeSalary(18500);
+			document.writeln("<br>"+emp.id+" "+emp.name+" "+emp.salary);
+			
+		</script>
+	</body>	
+</html>

@@ -1,0 +1,38 @@
+<!--We can create Array in 3 ways
+	1) By array literal
+	2) By creating instance of Array directly (using new keyword)
+	3) By using an Array constructor (using new keyword)
+
+-->
+<html>
+	<title>Array|Creation</title>
+	<head>
+		<h1>Array Creation</h1>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var emp = ["Venu","Raju","Karthik"];  //By array literal
+			for(i=0;i<emp.length;i++){
+				document.write(emp[i]+"<br/>");
+			}
+			//By creating instance of Array directly (using new keyword)
+			var emp = new Array();
+			emp[0]="Kumar";
+			emp[1]="Rahul";
+			emp[2]="Keerthana";
+			
+			for(i=0;i<emp.length;i++){
+				document.write("<br/>"+emp[i]);
+			}
+			document.write("<br/>");
+			//By using an Array constructor (using new keyword)
+			var emp = new Array("Sneha","Ravi","Vikas");
+			for(i=0;i<emp.length;i++){
+				document.write("<br/>"+emp[i]);
+			}
+			
+			
+			
+		</script>
+	</body>
+</html>
